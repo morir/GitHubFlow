@@ -14,9 +14,12 @@
 3. **コーダ** (開発環境) リポジトリをローカル環境に Clone します。
 3. **管理人** (GitHub) 開発案件毎に issue を作成し、**コーダ** にアサインします。  
 4. **コーダ** (GitHub) issue を確認し、master ブランチから ”Issue_#x” (x は issue 番号) でブランチを切ります。
-5. **コーダ** (GitHub) ブランチを自分の担当ブランチに切り替えます。(gitpull + git checkout)  
+5. **コーダ** (GitHub) ブランチを自分の担当ブランチに切り替えます。 
+  ``` git pull ```  
+  ``` git checkout Issue_#x```  
+
 6. **コーダ** (GitHub) 空のコミットを作成し push します。   
-  ``` git commit --allow-empty -m "Issue_#X" ```
+  ``` git commit --allow-empty -m "Issue_#x" ```  
   ``` git push```  
 5. **コーダ** (GitHub) ブランチの pull Request を "[WIP] Issue_#x" というタイトルで作成します。  
 7. **コーダ** (開発環境) 開発します。必要に応じて commit してください。  
