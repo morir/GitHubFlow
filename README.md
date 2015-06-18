@@ -7,6 +7,14 @@
 * github 上でのコミュニケーションになれるため、なるべく会話しないで Pull Request 上でコミュニケーション取りましょう。  
 * なのですぐ github アカウントですぐに確認できるメールアドレスを設定してください。  
   
+  
+### ISSUE  
+----   
+* SpellChecker の実装、 check() メソッド    
+* WordDictionary の実装, containts(), addWord(), getAllWord() メソッド
+* CheckResult の実装, constractor, getter 2 つ  
+* MainPaneController の実装, addButtonFired()  メソッド
+
 ### 手順
 ---- 
 1. **管理人** (GitHub) このリポジトリを自分のアカウントにフォークします。  
