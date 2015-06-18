@@ -31,11 +31,7 @@ public class WordDictionary implements IWordDictionary {
 	 */
 	@Override
 	public boolean containts(String word) {
-		if (strList.contains(word)) {
-			return true;
-		} else {
-			return false;
-		}
+		return strList.contains(word);
 	}
 
 	/*
