@@ -17,7 +17,7 @@ public interface ICheckResult {
 	 * @return 単語チェック結果
 	 */
 	static ICheckResult create(boolean isValid, List<String> SuggestList) {
-		return null;
+		return new CheckResult(isValid, SuggestList);
 	}
 
 	/**

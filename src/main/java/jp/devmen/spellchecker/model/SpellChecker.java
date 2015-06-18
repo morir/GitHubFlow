@@ -46,7 +46,11 @@ public class SpellChecker implements ISpellChecker {
 		// matchs の長さが 0 であれば検査は正常です
 		// 単語が不正であれば matchs の最初の要素の getSuggestedReplacements() で修正候補が取得できます。
 		// see. http://wiki.languagetool.org/java-api
+		if (matchs.size() == 0)
+		{
+			return ICheckResult.create(true, null);
+		}
 
-		return null;
+		return ICheckResult.create(false, matchs.get(0).getSuggestedReplacements());
 	}
 }
