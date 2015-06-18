@@ -3,6 +3,7 @@
  */
 package jp.devmen.spellchecker.model;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
 public class WordDictionary implements IWordDictionary {
 
 	private static WordDictionary wordDictionary = new WordDictionary();
+	private List<String> strList = new ArrayList<String>();
 
 	private WordDictionary() {
 	}
@@ -29,7 +31,11 @@ public class WordDictionary implements IWordDictionary {
 	 */
 	@Override
 	public boolean containts(String word) {
-		return false;
+		if (strList.contains(word)) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	/*
@@ -40,6 +46,7 @@ public class WordDictionary implements IWordDictionary {
 	 */
 	@Override
 	public void addWord(String word) {
+		strList.add(word);
 	}
 
 	/*
@@ -49,7 +56,7 @@ public class WordDictionary implements IWordDictionary {
 	 */
 	@Override
 	public List<String> getAllWord() {
-		return Arrays.asList("Cat", "Dog", "Animal", "Fish", "Cow");
+		return strList;
 	}
 
 }
