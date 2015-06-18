@@ -1,6 +1,5 @@
 package jp.devmen.spellchecker.model;
 
-import java.util.List;
 
 public interface ISpellChecker {
 
@@ -9,7 +8,7 @@ public interface ISpellChecker {
 	 * 
 	 * @param word
 	 *            検査対象の単語
-	 * @return 単語が存在しない場合、修正候補の単語をリストで返却します。
+	 * @return 単語の検査結果
 	 */
-	List<String> check(String word);
+	ICheckResult check(String word);
 }
